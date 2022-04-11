@@ -43,13 +43,13 @@ namespace Task3
                 var random = new Random();
                 int computerchoice = random.Next(0, choice.Count());
                 string namecompchoice = choice[computerchoice];
-                string nameuserchoice;
+                string nameuserchoice= "";
                 MyHmac keyHmac = new MyHmac();
                 Console.WriteLine("HMAC:\n" + keyHmac.returnHMAC(namecompchoice));
                 Console.WriteLine("Avalable moves:");
-                for (int i = 0; i < choice.Count; i++)
+                for (int i = 1; i < choice.Count; i++)
                 {
-                    Console.WriteLine(i+$" - {choice[i]}");
+                    Console.WriteLine(i+$" - {choice[i-1]}");
                 }
                 Console.WriteLine("0 - exit");
                 Console.WriteLine("? - TableRules(help)");
@@ -57,7 +57,7 @@ namespace Task3
                 string answer = Console.ReadLine();
                 if (answer.All(Char.IsDigit) && Convert.ToInt32(answer) <= choice.Count() && answer != "0")
                 {
-                    nameuserchoice = choice[Convert.ToInt32(answer)];
+                    nameuserchoice = choice[Convert.ToInt32(answer)-1];
                 }
                 else
                 {
@@ -73,7 +73,27 @@ namespace Task3
                             Console.WriteLine("Thanks for a game! Bye!");
                             break;
                         }
+                        else
+                        {
+                            Console.WriteLine("Error: bad answer\nRepeat please!");
+                            continue;
+                        }
                     }
+
+                }
+                Console.WriteLine("Your move: " + nameuserchoice);
+                Console.WriteLine("Computer move: " + namecompchoice);
+                var win = new Rules();
+                switch (win.Winer(choice,Convert.ToInt32(answer),computerchoice)) {
+                    case 1:
+                        Console.WriteLine("You WIN! My congratulations");
+                        break;
+                    case -1:
+                        Console.WriteLine("You LOSE :(");
+                        break;
+                    case 0:
+                        Console.WriteLine("Draw");
+                        break;
                 }
             }
             Console.WriteLine();
