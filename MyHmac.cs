@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace itransition_labs_3
+namespace Task3
 {
     public class MyHmac : RandomNumberGenerator
     {
