@@ -1,0 +1,17 @@
+C:\Users\kosum\source\repos\Task3\Task3\bin\Debug\net6.0\Task3.exe
+C:\Users\kosum\source\repos\Task3\Task3\bin\Debug\net6.0\Task3.deps.json
+C:\Users\kosum\source\repos\Task3\Task3\bin\Debug\net6.0\Task3.runtimeconfig.json
+C:\Users\kosum\source\repos\Task3\Task3\bin\Debug\net6.0\Task3.dll
+C:\Users\kosum\source\repos\Task3\Task3\bin\Debug\net6.0\Task3.pdb
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.csproj.AssemblyReference.cache
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.AssemblyInfoInputs.cache
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.AssemblyInfo.cs
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.csproj.CoreCompileInputs.cache
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.dll
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\refint\Task3.dll
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.pdb
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.genruntimeconfig.cache
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\ref\Task3.dll
+C:\Users\kosum\source\repos\Task3\Task3\bin\Debug\net6.0\ConsoleTables.dll
+C:\Users\kosum\source\repos\Task3\Task3\obj\Debug\net6.0\Task3.csproj.CopyComplete
