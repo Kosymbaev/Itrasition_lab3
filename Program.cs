@@ -24,7 +24,7 @@ namespace Task3
                 return;
             }
             bool repeat = false;
-            for (int i = 0; i < choice.Count() - 1; i++)
+            for (int i = 0; i < choice.Count()-1; i++)
             {
                 for (int j = i + 1; j < choice.Count(); j++)
                 {
@@ -47,7 +47,7 @@ namespace Task3
                 MyHmac keyHmac = new MyHmac();
                 Console.WriteLine("HMAC:\n" + keyHmac.returnHMAC(namecompchoice));
                 Console.WriteLine("Avalable moves:");
-                for (int i = 1; i < choice.Count; i++)
+                for (int i = 1; i < choice.Count()+1; i++)
                 {
                     Console.WriteLine(i+$" - {choice[i-1]}");
                 }
@@ -84,7 +84,7 @@ namespace Task3
                 Console.WriteLine("Your move: " + nameuserchoice);
                 Console.WriteLine("Computer move: " + namecompchoice);
                 var win = new Rules();
-                switch (win.Winer(choice,Convert.ToInt32(answer),computerchoice)) {
+                switch (win.Winer(choice,Convert.ToInt32(answer)-1,computerchoice)) {
                     case 1:
                         Console.WriteLine("You WIN! My congratulations");
                         break;
